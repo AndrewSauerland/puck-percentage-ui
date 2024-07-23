@@ -1,0 +1,19 @@
+{
+  "name": "puck-percentage-ui",
+  "version": "1.0.0",
+  "description": "ui for puck-percentage",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewSauerland/puck-percentage-ui.git"
+  },
+  "author": "Andrew Sauerland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewSauerland/puck-percentage-ui/issues"
+  },
+  "homepage": "https://github.com/AndrewSauerland/puck-percentage-ui#readme"
+}
