@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AndrewSauerland/puck-percentage-ui/issues"
   },
-  "homepage": "https://github.com/AndrewSauerland/puck-percentage-ui#readme"
+  "homepage": "https://github.com/AndrewSauerland/puck-percentage-ui#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
