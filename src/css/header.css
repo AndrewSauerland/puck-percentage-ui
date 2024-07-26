@@ -1,0 +1,73 @@
+/* 
+Used for header 
+*/
+
+body, button {
+  font-family: 'Arial', sans-serif; 
+  font-size: 26px; 
+  font-weight: bold; 
+  color: #000000;
+}
+
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr 350px 1fr;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.header-side {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 125px;
+  background-color: white;
+}
+
+.header-row {
+  flex: 1fr;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
+}
+
+.header-middle {
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-image {
+  width: 40px;
+  display: block;
+  margin-right: 8px;
+}
+
+.header-border {
+  height: 20px;
+  width: 1fr;
+  background-color: lightblue;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.clickable {
+  cursor: pointer;
+}
