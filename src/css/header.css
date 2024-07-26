@@ -2,10 +2,10 @@
 Used for header 
 */
 
-body, button {
-  font-family: 'Arial', sans-serif; 
-  font-size: 26px; 
-  font-weight: bold; 
+body, button, span, header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
   color: #000000;
 }
 

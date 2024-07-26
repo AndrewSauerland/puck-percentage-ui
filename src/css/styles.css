@@ -1,0 +1,31 @@
+
+
+.headerTest1 {
+  background-color: rgb(245, 203, 92);
+  height: 50px;
+  width: 1fr;
+}
+
+.headerTest2 {
+  background-color: rgb(186, 215, 242);
+  height: 50px;
+  width: 1fr;
+}
+
+.headerTest3 {
+  background-color: rgb(158, 195, 229);
+  height: 50px;
+  width: 1fr;
+}
+
+.headerTest4 {
+  background-color: rgb(28, 93, 153);
+  height: 50px;
+  width: 1fr;
+}
+
+.headerTest5 {
+  background-color: black;
+  height: 50px;
+  width: 1fr;
+}
