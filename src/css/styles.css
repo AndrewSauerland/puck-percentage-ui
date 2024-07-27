@@ -60,17 +60,22 @@
 }
 
 .entry-team-logo {
-  width: 175px;
+  width: 140px;
 }
 
 .prob-info {
-  text-align: center;
-  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background-color: lightgray;
 }
 
 .prob-percentage {
-  width: 80%;
-  padding-bottom: 7%;
+  width: 90%;
+  padding-bottom: 6%;
   border: 2px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
