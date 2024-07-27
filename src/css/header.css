@@ -64,7 +64,44 @@ body, button, span, header {
   margin-right: 8px;
   justify-content: center;
   align-items: center;
+}
 
+.header-border {
+  height: 40px;
+  width: 1fr;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.headerGradient1 {
+  background-color: rgb(245, 203, 92);
+  height: 8px;
+}
+
+.headerGradient2 {
+  background-color: rgb(186, 215, 242);
+  height: 8px;
+}
+
+.headerGradient3 {
+  background-color: rgb(158, 195, 229);
+  height: 8px;
+}
+
+.headerGradient4 {
+  background-color: rgb(28, 93, 153);
+  height: 8px;
+}
+
+.headerGradient5 {
+  background-color: rgb(13, 42, 68);
+  height: 8px;
+}
+
+.headerGradient6 {
+  background-color: black;
+  height: 8px;
 }
 
 .clickable {
