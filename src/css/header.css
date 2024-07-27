@@ -4,7 +4,7 @@ Used for header
 
 body, button, span, header {
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: #000000;
 }
@@ -21,7 +21,7 @@ body, button, span, header {
 .header-side {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  height: 125px;
+  height: 150px;
   background-color: white;
 }
 
@@ -29,14 +29,12 @@ body, button, span, header {
   flex: 1fr;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 10px;
 }
 
 .header-middle {
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
-  border-radius: 50px;
+  
 }
 
 .header-container {
@@ -46,26 +44,27 @@ body, button, span, header {
 }
 
 .header-logo {
-  height: 120px;
+  height: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .header-image {
-  width: 40px;
+  height: 65px;
   display: block;
   margin-right: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-border {
-  height: 20px;
-  width: 1fr;
-  background-color: lightblue;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.header-image-blown {
+  width: 90px;
+  display: block;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .clickable {

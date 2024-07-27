@@ -1,31 +1,43 @@
 
 
-.headerTest1 {
+.header-border {
+  height: 40px;
+  width: 1fr;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.headerGradient1 {
   background-color: rgb(245, 203, 92);
-  height: 50px;
-  width: 1fr;
+  height: 8px;
 }
 
-.headerTest2 {
+.headerGradient2 {
   background-color: rgb(186, 215, 242);
-  height: 50px;
-  width: 1fr;
+  height: 8px;
 }
 
-.headerTest3 {
+.headerGradient3 {
   background-color: rgb(158, 195, 229);
-  height: 50px;
-  width: 1fr;
+  height: 8px;
 }
 
-.headerTest4 {
+.headerGradient4 {
   background-color: rgb(28, 93, 153);
-  height: 50px;
-  width: 1fr;
+  height: 8px;
 }
 
-.headerTest5 {
+.headerGradient5 {
+  background-color: rgb(13, 42, 68);
+  height: 8px;
+}
+
+.headerGradient6 {
   background-color: black;
-  height: 50px;
-  width: 1fr;
+  height: 8px;
+}
+
+.main-content {
+  height: 600px;
+  align-items: center;
 }
