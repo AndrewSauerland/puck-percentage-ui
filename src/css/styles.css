@@ -39,11 +39,11 @@
 
 .prob-entry {
   width: 100%;
-  height: 250px;
+  height: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px dotted black;
+  border: 2px dotted gray;
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -51,7 +51,7 @@
 .prob-content {
   margin-top: 2px;
   margin-bottom: 2px;
-  height: 200px;
+  height: 250px;
   width: 90%;
   border: 2px dashed black;
   display: flex;
@@ -59,24 +59,74 @@
   align-items: center;
 }
 
-.entry-team-logo {
-  width: 140px;
+.prob-logo-container {
+  height: 250px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.prob-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.entry-team-logo {
   height: 100%;
   width: 100%;
+}
+
+.prob-info-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  flex-grow: 1;
   align-items: center;
-  background-color: lightgray;
+  border: 2px dashed lightgray;
 }
 
 .prob-percentage {
   width: 90%;
-  padding-bottom: 6%;
-  border: 2px solid black;
+  padding-bottom: 5.5%;
+  background-color: greenyellow;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.prob-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.prob-team-left {
+  text-align: left;
+  font-size: 25px;
+}
+
+.prob-team-right {
+  text-align: right;
+  font-size: 25px;
+}
+
+.prob-spacer {
+  flex-grow: 1;
+}
+
+.prob-odds-american-left {
+  text-align: left;
+  font-size: 25px;
+}
+
+.prob-odds-decimal-left {
+  text-align: left;
+  font-size: 25px;
+}
+
+.prob-odds-american-right {
+  text-align: right;
+  font-size: 25px;
+}
+
+.prob-odds-decimal-right {
+  text-align: right;
+  font-size: 25px;
 }
