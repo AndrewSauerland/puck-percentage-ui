@@ -15,11 +15,11 @@
 
 <body>
     <div class="header-border">
-      <div class="headerGradient5"></div>
-      <div class="headerGradient4"></div>
-      <div class="headerGradient3"></div>
-      <div class="headerGradient2"></div>
-      <div class="headerGradient1"></div>
+      <div class="header-gradient color-five"></div>
+      <div class="header-gradient color-four"></div>
+      <div class="header-gradient color-three"></div>
+      <div class="header-gradient color-two"></div>
+      <div class="header-gradient color-one"></div>
     </div>
     <header>
       <div class="site-header">
@@ -73,183 +73,70 @@
       </div>
     </header>
     <div class="header-border">
-      <div class="headerGradient1"></div>
-      <div class="headerGradient2"></div>
-      <div class="headerGradient3"></div>
-      <div class="headerGradient4"></div>
-      <div class="headerGradient5"></div>
+      <div class="header-gradient color-one"></div>
+      <div class="header-gradient color-two"></div>
+      <div class="header-gradient color-three"></div>
+      <div class="header-gradient color-four"></div>
+      <div class="header-gradient color-five"></div>
     </div>
     <main>
       <div class="main-content">
         <h1 class="page-title">Probabilities</h1>
         <div class="date-select">
-          <img src="../../lib/img/TradeAnalyzer.png" class="date-arrow">
+          <img src="../../lib/img/TradeAnalyzer.png" class="date-arrow clickable">
           <h3 class="date-select">Date</h3>
-          <img src="../../lib/img/TradeAnalyzer.png" class="date-arrow">
+          <img src="../../lib/img/TradeAnalyzer.png" class="date-arrow clickable">
         </div>
-        <div class="prob-table">
+        <div class="prob-table" id="prob-table">
           <div class="prob-entry">
             <div class="prob-content">
               <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/PIT_light.svg" class="entry-team-logo">
+                <img src="https://assets.nhle.com/logos/nhl/svg/PIT_light.svg" class="entry-team-logo clickable">
               </div>
               <div class="prob-info-container">
                 <div class="prob-info">
-                  <div class="prob-team-left">PIT</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-left">-344</div>
-                  <div class="prob-odds-decimal-left">1.29</div>
+                  <div class="prob-top-spacer"></div>
+                  <div class="prob-info-team clickable left">PIT</div>
+                  <div class="prob-mid-spacer"></div>
+                  <div class="prob-odds-text left">-344</div>
+                  <div class="prob-odds-text left">1.29</div>
                 </div>
+                <div class="prob-info-analysis clickable">Game Analysis</div>
                 <div class="prob-info">
-                  <div class="prob-team-right">PHI</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-right">+344</div>
-                  <div class="prob-odds-decimal-right">4.4</div>
+                  <div class="prob-top-spacer"></div>
+                  <div class="prob-info-team right clickable">PHI</div>
+                  <div class="prob-mid-spacer"></div>
+                  <div class="prob-odds-text right">+344</div>
+                  <div class="prob-odds-text right">4.4</div>
                 </div>
               </div>
               <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/DET_light.svg" class="entry-team-logo">
+                <img src="https://assets.nhle.com/logos/nhl/svg/DET_light.svg" class="entry-team-logo clickable">
               </div>
             </div>
-            <div class="prob-percentage"></div>
-          </div>
-          <div class="prob-entry">
-            <div class="prob-content">
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/PIT_light.svg" class="entry-team-logo">
+            <div class="prob-percentage-container">
+              <div class="prob-percentage-dash"></div>
+              <div class="percentage-left">
+                <span class="percentage-text" id="asdf">60%</span>
               </div>
-              <div class="prob-info-container">
-                <div class="prob-info">
-                  <div class="prob-team-left">PIT</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-left">-344</div>
-                  <div class="prob-odds-decimal-left">1.29</div>
-                </div>
-                <div class="prob-info">
-                  <div class="prob-team-right">PHI</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-right">+344</div>
-                  <div class="prob-odds-decimal-right">4.4</div>
-                </div>
-              </div>
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/DET_light.svg" class="entry-team-logo">
+              <div class="percentage-spacer"></div>
+              <div class="percentage-right">
+                <span class="percentage-text">40%</span>
               </div>
             </div>
-            <div class="prob-percentage"></div>
-          </div>
-          <div class="prob-entry">
-            <div class="prob-content">
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/PIT_light.svg" class="entry-team-logo">
-              </div>
-              <div class="prob-info-container">
-                <div class="prob-info">
-                  <div class="prob-team-left">PIT</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-left">-344</div>
-                  <div class="prob-odds-decimal-left">1.29</div>
-                </div>
-                <div class="prob-info">
-                  <div class="prob-team-right">PHI</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-right">+344</div>
-                  <div class="prob-odds-decimal-right">4.4</div>
-                </div>
-              </div>
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/DET_light.svg" class="entry-team-logo">
-              </div>
-            </div>
-            <div class="prob-percentage"></div>
-          </div>
-          <div class="prob-entry">
-            <div class="prob-content">
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/PIT_light.svg" class="entry-team-logo">
-              </div>
-              <div class="prob-info-container">
-                <div class="prob-info">
-                  <div class="prob-team-left">PIT</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-left">-344</div>
-                  <div class="prob-odds-decimal-left">1.29</div>
-                </div>
-                <div class="prob-info">
-                  <div class="prob-team-right">PHI</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-right">+344</div>
-                  <div class="prob-odds-decimal-right">4.4</div>
-                </div>
-              </div>
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/DET_light.svg" class="entry-team-logo">
-              </div>
-            </div>
-            <div class="prob-percentage"></div>
-          </div>
-          <div class="prob-entry">
-            <div class="prob-content">
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/PIT_light.svg" class="entry-team-logo">
-              </div>
-              <div class="prob-info-container">
-                <div class="prob-info">
-                  <div class="prob-team-left">PIT</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-left">-344</div>
-                  <div class="prob-odds-decimal-left">1.29</div>
-                </div>
-                <div class="prob-info">
-                  <div class="prob-team-right">PHI</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-right">+344</div>
-                  <div class="prob-odds-decimal-right">4.4</div>
-                </div>
-              </div>
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/DET_light.svg" class="entry-team-logo">
-              </div>
-            </div>
-            <div class="prob-percentage"></div>
-          </div>
-          <div class="prob-entry">
-            <div class="prob-content">
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/PIT_light.svg" class="entry-team-logo">
-              </div>
-              <div class="prob-info-container">
-                <div class="prob-info">
-                  <div class="prob-team-left">PIT</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-left">-344</div>
-                  <div class="prob-odds-decimal-left">1.29</div>
-                </div>
-                <div class="prob-info">
-                  <div class="prob-team-right">PHI</div>
-                  <div class="prob-spacer"></div>
-                  <div class="prob-odds-american-right">+344</div>
-                  <div class="prob-odds-decimal-right">4.4</div>
-                </div>
-              </div>
-              <div class="prob-logo-container">
-                <img src="https://assets.nhle.com/logos/nhl/svg/DET_light.svg" class="entry-team-logo">
-              </div>
-            </div>
-            <div class="prob-percentage"></div>
           </div>
         </div>
 
-        
+        <!--!Accuracy?-->
 
       </div>
 
       <div class="header-border">
-        <div class="headerGradient1"></div>
-        <div class="headerGradient2"></div>
-        <div class="headerGradient3"></div>
-        <div class="headerGradient4"></div>
-        <div class="headerGradient5"></div>
+        <div class="header-gradient color-one"></div>
+        <div class="header-gradient color-two"></div>
+        <div class="header-gradient color-three"></div>
+        <div class="header-gradient color-four"></div>
+        <div class="header-gradient color-five"></div>
       </div>
     </main>
 </body>

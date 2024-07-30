@@ -74,34 +74,32 @@ body, button, span, header {
   text-align: center;
 }
 
-.headerGradient1 {
+.header-gradient {
+  height: 8px;
+}
+
+.color-one {
   background-color: rgb(245, 203, 92);
-  height: 8px;
 }
 
-.headerGradient2 {
+.color-two {
   background-color: rgb(186, 215, 242);
-  height: 8px;
 }
 
-.headerGradient3 {
+.color-three {
   background-color: rgb(158, 195, 229);
-  height: 8px;
 }
 
-.headerGradient4 {
+.color-four {
   background-color: rgb(28, 93, 153);
-  height: 8px;
 }
 
-.headerGradient5 {
+.color-five {
   background-color: rgb(13, 42, 68);
-  height: 8px;
 }
 
 .headerGradient6 {
   background-color: black;
-  height: 8px;
 }
 
 .clickable {

@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 1000px;
 }
 
 .prob-entry {
@@ -43,7 +43,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px dotted gray;
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -52,8 +51,7 @@
   margin-top: 2px;
   margin-bottom: 2px;
   height: 250px;
-  width: 90%;
-  border: 2px dashed black;
+  width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,15 +76,68 @@
   height: 100%;
   flex-grow: 1;
   align-items: center;
-  border: 2px dashed lightgray;
 }
 
-.prob-percentage {
-  width: 90%;
-  padding-bottom: 5.5%;
-  background-color: greenyellow;
+.prob-info-analysis {
+  width: 155px;
+}
+
+.prob-percentage-container {
+  position: relative;
+  display: flex;
+  width: 900px;
+  height: 52px;
+  background-color: rgb(78, 78, 78);
+  border: 5px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prob-percentage-dash {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  border-left: 2px dashed rgb(78, 78, 78); 
+  opacity: .32;
+  z-index: 1;
+}
+
+.percentage-left {
+  display: flex;
+  background-color: green;
+  align-items: center;
+  height: 42px;
+  width: 600px;
+  margin-left: 5px;
+  padding-left: 8px;
+}
+
+.percentage-right {
+  display: flex;
+  background-color: green;
+  align-items: center;
+  justify-content: right;
+  height: 42px;
+  width: 200px;
+  margin-right: 5px;
+  padding-right: 8px;
+}
+
+.percentage-text {
+  font-size: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: black;
+  opacity: .7;
+}
+
+.percentage-spacer {
+  height: 52px;
+  background-color: rgb(78, 78, 78);
+  width: 5.5px;
 }
 
 .prob-info {
@@ -97,36 +148,31 @@
   margin-right: 10px;
 }
 
-.prob-team-left {
+.prob-info-team {
+  font-size: 32px;
+}
+
+.prob-odds-text {
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.left {
   text-align: left;
-  font-size: 25px;
 }
 
-.prob-team-right {
+.right {
   text-align: right;
-  font-size: 25px;
 }
 
-.prob-spacer {
-  flex-grow: 1;
+.prob-top-spacer {
+  height:50px;
 }
 
-.prob-odds-american-left {
-  text-align: left;
-  font-size: 25px;
+.prob-mid-spacer {
+  height: 80px;
 }
 
-.prob-odds-decimal-left {
-  text-align: left;
-  font-size: 25px;
-}
-
-.prob-odds-american-right {
-  text-align: right;
-  font-size: 25px;
-}
-
-.prob-odds-decimal-right {
-  text-align: right;
-  font-size: 25px;
+.clickable {
+  cursor: pointer;
 }
