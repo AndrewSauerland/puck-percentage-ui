@@ -22,6 +22,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 90px;
+}
+
+.calendar-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flatpickr-input {
+  font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.flatpickr-calendar {
+  position: absolute;
+  transform: translate(-25%, 0);
+}
+
+.date-label {
+  justify-content: center;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .date-arrow {

@@ -1,17 +1,21 @@
 
 //^ Probabilities page
 
+let date = getDate();
+console.log("today = " + date);
+const url = 'https://wyvn83sqsb.execute-api.us-east-2.amazonaws.com/default/dbDateQuery?date=';
 
-async function pageLoad() {
+window.onload = render(date);
 
-  const url = 'https://wyvn83sqsb.execute-api.us-east-2.amazonaws.com/default/dbDateQuery?date=';
-  console.log("Page-load function");
-
-  const today = getDate();
-  console.log(today);
+//Build out the page contents
+async function render(date) {  
+  
+  //Clear table
+  let table = document.getElementById('prob-table');
+  table.innerHTML = '';
 
   //Run schedule endpoint, pull games
-  let scheduleData = await pullGames(url, '2023-11-10'); //~replace with \'today\' 
+  let scheduleData = await pullGames(url, date); 
   let entries = formatEntries(scheduleData);
 
   console.log(entries);
@@ -26,8 +30,6 @@ async function pageLoad() {
   });
 
 }
-
-window.onload = pageLoad;
 
 //Takes payload (returned from endpoint) and formats to account for html injection
 //returns array of arrays [gameID, awayTeam, homeTeam]
@@ -158,4 +160,60 @@ function calculateColor(teamPct) {
   return Math.round(colorIndex);
 }
 
+// Function to set the input text
+function setInputText(date) {
+  const input = document.querySelector("#flatpickr");
+  input.value = date;
+}
+
+//Updates for new date
+function handleDateSelection(newDate) {
+ console.log("DATE SELECTED: " + newDate);
+ date = newDate;
+ render(date);
+}
+
+//Renders date+1
+function handleNextDate() {
+
+  //Convert string date to a Date object, sets it to today + 1
+  let [year, month, day] = date.split('-').map(Number);
+  let dateObject = new Date(year, month-1, day);
+  dateObject.setDate(dateObject.getDate() + 1);
+  console.log("Adding a day to date: " + date);
+
+  //Format back to string
+  year = dateObject.getFullYear();
+  month = String(dateObject.getMonth() + 1).padStart(2, '0');
+  day = String(String(dateObject.getDate()).padStart(2, '0'));
+
+  date = year + "-" + month + "-" + day;
+  setInputText(date);
+  console.log("Set new date: " + date);
+
+  return `${year}-${month}-${day}`;
+
+}
+
+//Renders date-1
+function handlePrevDate() {
+
+  //Convert string date to a Date object, sets it to today - 1
+  let [year, month, day] = date.split('-').map(Number);
+  let dateObject = new Date(year, month-1, day);
+  dateObject.setDate(dateObject.getDate() - 1);
+  console.log("Subtracting a day from date: " + date);
+
+  //Format back to string
+  year = dateObject.getFullYear();
+  month = String(dateObject.getMonth() + 1).padStart(2, '0');
+  day = String(String(dateObject.getDate()).padStart(2, '0'));
+
+  date = year + "-" + month + "-" + day;
+  setInputText(date);
+  console.log("Set new date: " + date);
+
+  return `${year}-${month}-${day}`;
+
+}
 
