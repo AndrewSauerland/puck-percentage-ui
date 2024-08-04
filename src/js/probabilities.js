@@ -191,7 +191,7 @@ function handleNextDate() {
   setInputText(date);
   console.log("Set new date: " + date);
 
-  return `${year}-${month}-${day}`;
+  render(`${year}-${month}-${day}`);
 
 }
 
@@ -213,7 +213,7 @@ function handlePrevDate() {
   setInputText(date);
   console.log("Set new date: " + date);
 
-  return `${year}-${month}-${day}`;
+  render(`${year}-${month}-${day}`);
 
 }
 

@@ -84,12 +84,12 @@
       <div class="main-content">
         <h1 class="page-title">Probabilities</h1>
         <div class="date-select">
-          <img onclick="render(handlePrevDate())" src="../../lib/img/TradeAnalyzer.png" class="date-arrow clickable">
+          <img onclick="handlePrevDate(); setCalendarDisplayDate(date)" src="../../lib/img/TradeAnalyzer.png" class="date-arrow clickable">
           <div class="date-select calendar-select">
             <h3 class="date-label">Date</h3>
             <input type="text" id="flatpickr" class="flatpickr-input">
           </div>
-          <img onclick="render(handleNextDate())" src="../../lib/img/TradeAnalyzer.png" class="date-arrow clickable">
+          <img onclick="handleNextDate(); setCalendarDisplayDate(date)" src="../../lib/img/TradeAnalyzer.png" class="date-arrow clickable">
         </div>
         <div class="prob-table" id="prob-table">
           <div class="prob-entry">
@@ -149,7 +149,7 @@
 <script src="../js/probabilities.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
-  flatpickr("#flatpickr", {
+  const fp = flatpickr("#flatpickr", {
     animate: false,
     defaultDate: getDate(),
     onChange: function(selectedDates, dateStr, instance) {
@@ -160,6 +160,10 @@
       }
     }
   });
+
+  function setCalendarDisplayDate(newDate) {
+    fp.setDate(newDate);
+  }
 </script>
 
 

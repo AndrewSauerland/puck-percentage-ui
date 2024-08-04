@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AndrewSauerland/puck-percentage-ui#readme",
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "puck-percentage-ui": "file:"
   }
 }
