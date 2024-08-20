@@ -3,7 +3,7 @@
 
 let date = getDate();
 console.log("today = " + date);
-const url = 'https://wyvn83sqsb.execute-api.us-east-2.amazonaws.com/default/dbDateQuery?date=';
+const url = 'https://sct6mis2eb.execute-api.us-east-1.amazonaws.com/default/DailyScheduleQuery?date=';
 
 window.onload = render(date);
 
